@@ -145,7 +145,7 @@ function createTable() {
 
     hours.unshift('');
     
-    var thead = document.createElement('thead');
+    var th = document.createElement('th');
     table.appendChild(thead);
 
     var tr = document.createElement('tr');
