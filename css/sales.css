@@ -1,6 +1,23 @@
 body{
     background-color: rgb(228, 238, 247);
 }
+
+form {
+    margin-bottom: 20px;
+}
+form fieldset{
+    padding: 20px;
+}
+form :nth-child(4),form :nth-child(6),form :nth-child(8)
+{
+    margin-left: 20px;
+}
+form :nth-child(3),form :nth-child(5),form :nth-child(7),form :nth-child(9)
+{
+    margin-left: 2px;
+}
+
+
 table, th, td{ 
 
      border: solid 2px rgb(39, 170, 67);
