@@ -78,6 +78,28 @@ Paris.renderedArray();
 var Lima = new TableOfData('Lima', 2, 16, 4.6);
 Lima.renderedArray();
 
+let form=document.getElementById("LocationForm");
+function locationSubmission(event){
+
+    event.preventDefault();
+    console.log(event)
+    let name=event.target.Cityname.value;
+    let min=event.target.minCookies.value;
+    let max=event.target.maxCookies.value;
+    let avg=event.target.avgCookies.value;
+    var newName = new TableOfData(name, min, max, avg);
+    var minm=parseInt(min);
+    var maxm=parseInt(max);
+   if(minm>=maxm){
+       alert("check the maximum grater than minimum");
+   }
+       else {newName.renderedArray();}
+    
+}
+
+form.addEventListener('submit',locationSubmission);
+
+
 createTable();
 
 function createTable() {
@@ -127,6 +149,10 @@ function createTable() {
     lasttd.textContent = "Daily Location Total";
     tr.appendChild(lasttd);
 }
+
+
+
+console.log(162+12+102+162+162+102+102+72+132+12+132+72+132+72);
 
 
 
