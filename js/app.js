@@ -2,69 +2,6 @@
 const hours=['6am','7am','8am','9am','10am','11am','12am'
 ,'1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
-// let parent=document.getElementById('SalmonCookies');
-// function getRandomCustomer(min,max){
-//   return Math.floor(Math.random()*(max-min +1)+min);
-// }
-
-
-// function CityNameOfSeal(name,minCust,maxCust,avgCookies){
-//    this.name=name;
-//    this.minCust=minCust;
-//    this.maxCust=maxCust;
-//    this.avgCookies=avgCookies;
-//    this.cookiesPerHour=[];
-//     this.getCustomer=function(){
-//       for(let i=0;i<hours.length;i++){
-//         let cookies =getRandomCustomer(this.minCust,this.maxCust)*this.avgCookies;
-//         this.cookiesPerHour.push(Math.ceil(cookies));
-//         this.total+=cookies;
-//       }
-//      this.render=function(){
-//       let h2=document.createElement('h2');
-//       parent.appendChild(h2);
-//       h2.parent=this.name;
-      
-//       let ul =document.createElement('ul');
-//       parent.appendChild(ul);
-      
-//       for(let i=0;i<hours.length;i++)
-//       {
-//         let li =document.createElement('li');
-//         ul.appendChild(li);
-//         li.textContent =`${hours[i]}: ${this.cookiesPerHour[i]} cookies`;
-//       }
-//       let totaly =document.createElement('li');
-//         ul.appendChild(totaly);
-//         totaly.textContent = 'Total is '+Math.floor(this.total);
-
-
-
-//      }
-      
-//     }
-   
-
-// }
- 
-// const location1=new CityNameOfSeal('Seattl',23,65,6.3);
-// location1.getCustomer();
-// location1.render();
-
-// const location2=new CityNameOfSeal('Tokyo',3,24,1.2);
-// location2.getCustomer();
-// location2.render();
-
-// const location3=new CityNameOfSeal('Dubai',11,38,3.7);
-// location3.getCustomer();
-// location3.render();
-
-// const location4=new CityNameOfSeal('paris',20,38,2.3);
-// location4.getCustomer();
-// location4.render();
-
-
-
 var article = document.createElement('article');
 var table = document.createElement('table');
 var tbody = document.createElement('tbody');
@@ -189,7 +126,4 @@ function createTable() {
 }
 
 
-var welcom =document.getElementById(header2);
-var context=welcom.textContent("2d");
-context.font="70px Arial";
-context.strokeText("Welcom",10,50);
+
