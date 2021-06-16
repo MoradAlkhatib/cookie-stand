@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(228, 238, 247);
+}
+header h1{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    text-decoration:wavy aqua;
+}
+header img{
+    width: 500px;
+}
+header nav{
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+header nav a{
+    text-decoration: none;
+    border: 2px olive outset;
+    padding: 10px;
+    margin-left: 20px;
+}
+#myCanvas{
+    margin-left: 42%;
+    transform: rotate();
+    
+    
+}
+h4{
+    font-size: 30px;
+}
+pre{
+    text-indent: 20px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
