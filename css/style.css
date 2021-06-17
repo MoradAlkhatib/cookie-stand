@@ -1,34 +1,109 @@
 body{
     background-color: rgb(228, 238, 247);
 }
+.maindiv{
+    margin:0 auto;
+    width: 96%;
+    float: none;
+    border: 40px groove ;
+}
+header{
+    
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+   
+}
 header h1{
+    
     font-size: 50px;
     font-style: italic;
     font-weight: 900;
     text-decoration:wavy aqua;
+    margin: 0 70px;
+    
 }
 header img{
-    width: 500px;
+    width: 300px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: 90px;
 }
 header nav{
-    float: right;
-    margin-top: 50px;
-    margin-right: 20px;
+    margin-top: 120px;
+    
 }
+
 header nav a{
     text-decoration: none;
     border: 2px olive outset;
     padding: 10px;
-    margin-left: 20px;
-}
-#myCanvas{
-    margin-left: 42%;
-    transform: rotate();
-    
+    margin-left: 5px;
     
 }
-h4{
+header nav a:hover{
+    background-color: aqua;
+
+}
+
+main{
+    display: grid;
+    
+}
+
+
+
+.div1{
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    grid-template-rows: 300px 1fr;
+
+}
+.div1 h4{
     font-size: 30px;
+    font-style: italic;
+}
+.div1 h5{
+    font-size: 20px;
+    font-style: italic;
+}
+.div1 :nth-child(1){
+    margin-top: 50px;
+}
+.div2{
+margin: 40px auto;
+background-color: palegreen;
+
+}
+.div3{
+    margin: 50px auto;
+    background-color: lightblue;
+    padding: 50px 50px 0px 50px;
+
+}
+.div4{
+    text-align: center;
+    background-color: lightgrey;
+}
+p,pre{
+    font-size: 25px;
+    margin-top: 20px;
+   
+    color: maroon;
+}
+.div3 :nth-child(2){
+    color: rgb(94, 80, 6);
+}
+.div3 :nth-child(4){
+    text-align: center;
+     margin-top: 40px;
+     font-size: 40px;
+     color: orangered;
+    
+}
+.div4{
+    padding: 30px;
 }
 pre{
     text-indent: 20px;
@@ -38,4 +113,9 @@ h2{
     font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
+}
+
+footer{
+    background-color: plum;
+    padding-top:  10px;
 }
