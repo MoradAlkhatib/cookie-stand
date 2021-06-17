@@ -2,32 +2,82 @@ body{
     background-color: rgb(228, 238, 247);
 }
 
-form {
-    margin-bottom: 20px;
+#maindiv{
+    margin:0 auto;
+    width: 96%;
+    float: none;
+    border: 40px groove ;
 }
-form fieldset{
+
+header h2{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+ form {
+    margin-top: 60px;
+    margin-left: 15px;
+    border-width: unset;
+    padding: 50px;
+    width: 200px;
+ }
+form fieldset input{
+    padding: 3px;
+    margin :10px auto;
+}
+input {
+    border:1;
+   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+   border-radius: 10px;
+}
+
+fieldset{
     padding: 20px;
+    font-size: 30px;
+    border: inset 5px rgb(39, 170, 67);
+    display: grid;
+    grid-template-columns: 250px;
+    margin: 3px auto;
 }
-form :nth-child(4),form :nth-child(6),form :nth-child(8)
-{
-    margin-left: 20px;
+.submitbtn{
+    width: 150px;
+    margin-top: 20px;
+    border: 3px solid tan;
+    padding: 5px;
+
 }
-form :nth-child(3),form :nth-child(5),form :nth-child(7),form :nth-child(9)
-{
-    margin-left: 2px;
+.submitbtn :checked{
+    background-color: yellowgreen;
+}
+main{
+    border:2px inset lawngreen;
+    display: flex;
 }
 
 
+main div {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+    
+    
+}
 table, th, td{ 
 
-     border: solid 2px rgb(39, 170, 67);
+      border: inset 4px rgb(39, 170, 67);
        border-spacing: 5px;
       } 
        
        
  th, td{  
     background-color:rgba(36, 36, 14, 0);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
     }  
     table{ 
-        width: 85%;   margin: auto; 
+        width: 85%; 
+        margin: auto; 
        }

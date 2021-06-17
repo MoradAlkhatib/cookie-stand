@@ -7,62 +7,105 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald:wght@200&display=swap" rel="stylesheet">
     
 </head>
 <body>
+    <div class="maindiv">
     <header>
-        <H1 style="text-align: center;">Salmun Cookies</H1>
         <img src="./img/salmon.png" alt="">
+        <H1 style="text-align: center;">Salmun Cookies</H1>
         <nav>
             <a href="./sales.html">Sales Page</a>
             <a href="#product">Our Products</a>
             <a href="#About">About-Us</a>
             <a href="#Contact">Contact</a>
-            <a href="#discount">New-discount</a>
+            
 
         </nav>
         
     </header>
-    <canvas id="myCanvas" ></canvas>
+    
     
 
    <main>
+    <canvas class="myCanvas" ></canvas>
+    <div class="div1">
+        <div>
     <h4>Seattle :</h4><h5>Working Hours From 6am For 8pm</h5>
     <h4>Tokyo :</h4> <h5>Working Hours From 6am For 8pm</h5>
     <h4>Dubai :</h4> <h5>Working Hours From 6am For 8pm</h5>
     <h4>Paris :</h4> <h5>Working Hours From 6am For 8pm</h5>
     <h4>Lima :</h4>  <h5>Working Hours From 6am For 8pm</h5>
-
-       <h2 id="product">Our Products</h2> 
-       <ul>
-       <li><img src="./img/chinook.jpg" alt=""></li>
-       <li><img src="./img/cutter.jpeg" alt=""></li>
-       <li><img src="./img/family.jpg" alt=""></li>
-       <li><img src="./img/fish.jpg" alt=""></li>
-       <li><img src="./img/frosted-cookie.jpg" alt=""></li>
-       <li><img src="./img/salmon.png" alt=""></li></ul> 
-
+</div>
+    <img src="./img/family.jpg" alt="family">
+</div>
+       <!--  -->
+           <div class="div2">
+            <h2 id="product">Our Products</h2>    
+            
        
-
+       <img src="./img/cutter.jpeg" alt="" id="yourImageTagId">
+       <img src="./img/fish.jpg" alt="">
+       <img src="./img/frosted-cookie.jpg" alt="">
+       
+        </div>
+       
+        <div class="div3">
        <h2 id="About">About-Us</h2>
-        We have a ten years ago in our business to make a cookie fish and we made it like fish salmon 
+       <p> We have a ten years ago in our business to make a cookie fish and we made it like fish salmon </p>
+       <pre>WHAT YOU’LL FIND HERE
 
+        I created this blog in 2010 as a place to share my recipes and cookie decorating ideas.
+        And over the course of 9 years it became a delicious blend of my loves.
+        I like to create themed, pop culture desserts, decorated cookies, gingerbread house and cakes.</pre>
+        <p >From 2001</p>
+    </div>
+    <div class="div4">
        <h2 id="Contact">Contact</h2>
-        <label for="">email:</label>lola@aramic.com
-        <label for="">phone:</label>0795265589
-       <h2 id="discount">Our Products</h2>
-       <h3>Stay tuned for discounts</h3>
+        <p>email: lola@aramic.com</p>
+        <p>phone: 0795265589</p>
+    </div>
+       
+    
+
    </main>
 
+    <footer>
+       <h2>Murad &copy; &daleth;</h2>
 
-   <script>
+    </footer>
+   <!-- <script>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.font = "70px sans-serif";
     ctx.strokeText("Welcom", 10, 50);
+    </script> -->
+<script>
+var currentImage = 0;
+var images = [
+    'img/cutter.jpeg',
+    'img/fish.jpg',
+    'img/frosted-cookie.jpg',
+    'img/cutter.jpeg',
+    'img/fish.jpg',
+    'img/frosted-cookie.jpg',
+    
+];
+var imageElement = document.getElementById('yourImageTagId');
 
+function nextImage(i){
+    // currentImage = (currentImage + 1) % images.length;
+       
+    imageElement.src = images[i];
+    
+}
+     
+   for(var i=0;i<images.length;i++)
+    {var timeoutId = setTimeout(nextImage(i), 1500);}
 
+</script>
 
-    </script>
 </body>
 </html>

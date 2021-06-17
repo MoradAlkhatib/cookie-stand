@@ -3,8 +3,6 @@ const hours=['6am','7am','8am','9am','10am','11am','12am'
 ,'1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
 
-
-
 var article = document.createElement('article');
 var table = document.createElement('table');
 var tbody = document.createElement('tbody');
@@ -39,7 +37,7 @@ TableOfData.prototype.renderedArray = function() {
     tbody.appendChild(tr);
 
     var td = document.createElement('td');
-    td.textContent = this.location;
+    td.textContent="Locations";
     tr.appendChild(td);
 
     for(var i = 0; i < hours.length; i++) {
@@ -82,7 +80,7 @@ let form=document.getElementById("LocationForm");
 function locationSubmission(event){
 
     event.preventDefault();
-    console.log(event)
+    
     let name=event.target.Cityname.value;
     let min=event.target.minCookies.value;
     let max=event.target.maxCookies.value;
@@ -94,7 +92,7 @@ function locationSubmission(event){
        alert("check the maximum grater than minimum");
    }
        else {newName.renderedArray();}
-    
+       form.reset();
 }
 
 form.addEventListener('submit',locationSubmission);
@@ -152,7 +150,7 @@ function createTable() {
 
 
 
-console.log(162+12+102+162+162+102+102+72+132+12+132+72+132+72);
+
 
 
 
